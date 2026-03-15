@@ -58,4 +58,41 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.scroll-animate').forEach(el => {
     observer.observe(el);
   });
+
+  // Contact Form Handling (Simulated)
+  const contactForm = document.getElementById('contact-form');
+  const submitBtn = document.getElementById('submit-btn');
+  const submitText = document.getElementById('submit-text');
+  const submitSpinner = document.getElementById('submit-spinner');
+  const sendIcon = document.querySelector('.send-icon');
+  const formMessage = document.getElementById('form-message');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      // UI Loading State
+      submitBtn.disabled = true;
+      submitSpinner.classList.remove('hidden');
+      sendIcon.classList.add('hidden');
+      submitText.textContent = 'Sending...';
+      formMessage.classList.add('hidden');
+
+      // Simulate network request delays
+      setTimeout(() => {
+        // UI Success State
+        submitBtn.disabled = false;
+        submitSpinner.classList.add('hidden');
+        sendIcon.classList.remove('hidden');
+        submitText.textContent = 'Send Message';
+        formMessage.classList.remove('hidden');
+        contactForm.reset();
+
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+          formMessage.classList.add('hidden');
+        }, 5000);
+      }, 1200);
+    });
+  }
 });

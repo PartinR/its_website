@@ -30,8 +30,6 @@
       <div class="nav-desktop">
         <a href="#about" class="nav-link">About</a>
         <a href="#services" class="nav-link">Services</a>
-        <a href="#why-us" class="nav-link">Why Us</a>
-        <a href="#contact" class="nav-link">Contact</a>
         <a href="#contact" class="nav-cta">Get Started</a>
       </div>
 
@@ -56,8 +54,6 @@
     <div class="mobile-menu-inner">
       <a href="#about" class="mobile-link">About</a>
       <a href="#services" class="mobile-link">Services</a>
-      <a href="#why-us" class="mobile-link">Why Us</a>
-      <a href="#contact" class="mobile-link">Contact</a>
       <a href="#contact" class="mobile-cta">Get Started</a>
     </div>
   </div>
@@ -430,6 +426,148 @@
 
     </div>
   </section>
+
+  <!-- --- Contact Section --- -->
+  <section id="contact" class="contact-section">
+    <div class="container contact-container">
+      
+      <div class="contact-header scroll-animate">
+        <span class="contact-badge">Contact Us</span>
+        <h2 class="contact-title">
+          Start with a <span class="highlight-text">free consultation</span>
+        </h2>
+        <p class="contact-desc">
+          Every case begins with a confidential conversation. 
+          Reach out and let us understand how we can help.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Contact Info -->
+        <div class="contact-info scroll-animate scroll-delay-150">
+          
+          <div class="info-item group">
+            <div class="info-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="info-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="info-label">Call Us</div>
+              <a href="tel:5551234567" class="info-value link">(555) 123-4567</a>
+            </div>
+          </div>
+
+          <div class="info-item group">
+            <div class="info-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="info-icon"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </div>
+            <div>
+              <div class="info-label">Email</div>
+              <a href="mailto:info@itspi.com" class="info-value link">info@itspi.com</a>
+            </div>
+          </div>
+
+          <div class="info-item group">
+            <div class="info-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="info-icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 15 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="info-label">Office</div>
+              <div class="info-value">By Appointment Only</div>
+            </div>
+          </div>
+
+          <div class="info-item group">
+            <div class="info-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="info-icon"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <div class="info-label">Hours</div>
+              <div class="info-value">24/7 Availability</div>
+            </div>
+          </div>
+
+          <div class="info-guarantee">
+            <p>
+              <strong>Confidentiality Guarantee:</strong> All inquiries and case details are handled with the strictest confidence. Your privacy is our highest priority.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper scroll-animate scroll-delay-200">
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe" class="form-input">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="john@example.com" class="form-input">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" class="form-input">
+            </div>
+            <div class="form-group">
+              <label for="message">How Can We Help?</label>
+              <textarea id="message" name="message" required placeholder="Briefly describe your situation. All information is kept strictly confidential." class="form-textarea"></textarea>
+            </div>
+            <button type="submit" id="submit-btn" class="submit-btn flex items-center justify-center gap-2">
+              <svg class="send-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+              <span id="submit-text">Send Message</span>
+              <div id="submit-spinner" class="spinner hidden"></div>
+            </button>
+            <div id="form-message" class="form-success-message hidden">Message sent! We'll be in touch within 24 hours.</div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- --- Footer Section --- -->
+  <footer class="footer-section">
+    <div class="container footer-container">
+      
+      <!-- Top Top: Logo & Links -->
+      <div class="footer-top">
+        
+        <div class="footer-brand">
+          <div class="footer-logo-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <div class="footer-text">
+            <span class="footer-title">In The Shadows</span>
+            <span class="footer-subtitle">Investigations</span>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <button onclick="document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' })" class="footer-link">About</button>
+          <button onclick="document.querySelector('#services')?.scrollIntoView({ behavior: 'smooth' })" class="footer-link">Services</button>
+          <button onclick="document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })" class="footer-link">Contact</button>
+        </div>
+
+      </div>
+
+      <!-- Bottom Half: Copyright & Legal -->
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; <span id="year">2026</span> In The Shadows Investigations. All rights reserved.
+        </p>
+        <div class="legal-links">
+          <button class="footer-legal-link">Privacy Policy</button>
+          <button class="footer-legal-link">Terms of Service</button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
 
   <script src="js/main.js"></script>
 </body>
