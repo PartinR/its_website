@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITS Investigations</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <div class="logo-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">In The Shadows</span>
+          <span class="logo-subtitle">Investigations</span>
+        </div>
+      </a>
+
+      <div class="nav-desktop">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#why-us" class="nav-link">Why Us</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact" class="nav-cta">Get Started</a>
+      </div>
+
+      <button class="nav-mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+        <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" x2="20" y1="12" y2="12"></line>
+          <line x1="4" x2="20" y1="6" y2="6"></line>
+          <line x1="4" x2="20" y1="18" y2="18"></line>
+        </svg>
+        <svg id="icon-close" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-inner">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#why-us" class="mobile-link">Why Us</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="#contact" class="mobile-cta">Get Started</a>
+    </div>
+  </div>
+
+  <section id="home" class="hero-section">
+    <div class="bg-pattern"></div>
+
+    <div class="container">
+      <div class="hero-grid">
+
+        <div class="hero-content">
+          <div class="fade-up delay-0">
+            <div class="badge">
+              Professional Investigation Services
+            </div>
+            <h1 class="hero-title">
+              Uncovering the
+              <span class="highlight">Truth in Shadows</span>
+            </h1>
+          </div>
+
+          <p class="hero-subtitle fade-up delay-2">
+            With over 15 years of experience, In The Shadows Investigations
+            delivers professional, discreet, and thorough investigative
+            services you can trust.
+          </p>
+
+          <div class="button-group fade-up delay-4">
+            <a href="#contact" class="btn btn-primary">Start Investigation</a>
+            <a href="#services" class="btn btn-outline">Our Services</a>
+          </div>
+
+          <div class="stats-grid fade-up delay-6">
+            <div class="stat-item">
+              <div class="stat-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <span class="stat-number">15+</span>
+              </div>
+              <p class="stat-label">Years Experience</p>
+            </div>
+            <div class="stat-item">
+              <div class="stat-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                  <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                <span class="stat-number">500+</span>
+              </div>
+              <p class="stat-label">Cases Solved</p>
+            </div>
+            <div class="stat-item">
+              <div class="stat-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span class="stat-number">24/7</span>
+              </div>
+              <p class="stat-label">Availability</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper fade-right delay-3">
+          <div class="image-container">
+            <img
+              src="https://images.unsplash.com/photo-1610449257708-7221b0b39687?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXRlY3RpdmUlMjBpbnZlc3RpZ2F0aW9uJTIwbm9pcnxlbnwxfHx8fDE3NzM1ODc3Njh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+              alt="Detective Investigation">
+            <div class="image-overlay"></div>
+          </div>
+
+          <div class="floating-card fade-up delay-10">
+            <div class="card-content">
+              <div class="card-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div>
+                <p class="card-subtitle">Trusted by 200+</p>
+                <p class="card-title">Satisfied Clients</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- --- About Section --- -->
+  <section id="about" class="about-section">
+    <div class="container about-container">
+      <div class="about-grid">
+
+        <!-- Left Side: Content -->
+        <div>
+          <div class="scroll-animate">
+            <span class="about-badge">About Us</span>
+            <h2 class="about-title">
+              Dedicated to uncovering
+              <br />
+              <span class="highlight-text">what matters most</span>
+            </h2>
+            <div class="about-description">
+              <p>
+                In The Shadows Investigations was founded on a simple principle:
+                everyone deserves access to the truth. Our team of seasoned investigators
+                brings decades of combined experience in law enforcement, intelligence,
+                and private investigation.
+              </p>
+              <p>
+                We leverage cutting-edge technology alongside time-tested investigative
+                techniques to deliver thorough, accurate results. Every case receives
+                our full attention and commitment to excellence.
+              </p>
+            </div>
+          </div>
+
+          <div class="scroll-animate scroll-delay-200" style="margin-top: 2rem;">
+            <button onclick="document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })"
+              class="btn-link">
+              Learn more about our process
+              <span class="arrow">&rarr;</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Side: Stats Grid -->
+        <div class="about-stats scroll-animate scroll-delay-150">
+
+          <div class="stat-card scroll-animate scroll-delay-200">
+            <div class="stat-card-icon">
+              <!-- lucide Award -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-award">
+                <path
+                  d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" />
+                <circle cx="12" cy="8" r="6" />
+              </svg>
+            </div>
+            <div class="stat-card-value">15+</div>
+            <div class="stat-card-label">Years Experience</div>
+          </div>
+
+          <div class="stat-card scroll-animate scroll-delay-300">
+            <div class="stat-card-icon">
+              <!-- lucide Target -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-target">
+                <circle cx="12" cy="12" r="10" />
+                <circle cx="12" cy="12" r="6" />
+                <circle cx="12" cy="12" r="2" />
+              </svg>
+            </div>
+            <div class="stat-card-value">2,500+</div>
+            <div class="stat-card-label">Cases Resolved</div>
+          </div>
+
+          <div class="stat-card scroll-animate scroll-delay-400">
+            <div class="stat-card-icon">
+              <!-- lucide TrendingUp -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-trending-up">
+                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+                <polyline points="16 7 22 7 22 13" />
+              </svg>
+            </div>
+            <div class="stat-card-value">98%</div>
+            <div class="stat-card-label">Client Satisfaction</div>
+          </div>
+
+          <div class="stat-card scroll-animate scroll-delay-500">
+            <div class="stat-card-icon">
+              <!-- lucide Users -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-users">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <div class="stat-card-value">100%</div>
+            <div class="stat-card-label">Confidential</div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Services Section --- -->
+  <section id="services" class="services-section">
+    <div class="container services-container">
+
+      <div class="services-header scroll-animate">
+        <span class="services-badge">Our Services</span>
+        <h2 class="services-title">
+          Comprehensive investigation
+          <br />
+          <span class="highlight-text">solutions</span>
+        </h2>
+        <p class="services-desc">
+          We offer a full range of professional investigation services,
+          each tailored to your specific needs and conducted with the
+          highest standards of professionalism.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card scroll-animate scroll-delay-150">
+          <div class="service-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-eye">
+              <path
+                d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">Surveillance</h3>
+          <p class="service-card-desc">Discreet physical and electronic surveillance operations conducted by experienced
+            professionals with state-of-the-art equipment.</p>
+          <div class="service-card-link">
+            <span>Learn more</span>
+            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card scroll-animate scroll-delay-200">
+          <div class="service-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-user-check">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <polyline points="16 11 18 13 22 9" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">Background Checks</h3>
+          <p class="service-card-desc">Comprehensive background investigations for employment screening, tenant
+            verification, personal relationships, and due diligence.</p>
+          <div class="service-card-link">
+            <span>Learn more</span>
+            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card scroll-animate scroll-delay-300">
+          <div class="service-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-file-search">
+              <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+              <path d="M4.268 21a2 2 0 0 0 1.727 1H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3" />
+              <path d="m9 18-1.5-1.5" />
+              <circle cx="5" cy="14" r="3" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">Asset Searches</h3>
+          <p class="service-card-desc">Thorough asset investigations to locate hidden assets, property holdings, bank
+            accounts, and financial interests.</p>
+          <div class="service-card-link">
+            <span>Learn more</span>
+            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card scroll-animate scroll-delay-400">
+          <div class="service-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-camera">
+              <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" />
+              <circle cx="12" cy="13" r="3" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">Infidelity Investigations</h3>
+          <p class="service-card-desc">Sensitive, professional investigations providing clarity and evidence when trust
+            is in question. Complete discretion guaranteed.</p>
+          <div class="service-card-link">
+            <span>Learn more</span>
+            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card scroll-animate scroll-delay-500">
+          <div class="service-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-scale">
+              <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+              <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+              <path d="M7 21h10" />
+              <path d="M12 3v18" />
+              <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">Legal Support</h3>
+          <p class="service-card-desc">Expert investigative support for attorneys including witness location, process
+            serving, evidence gathering, and trial preparation.</p>
+          <div class="service-card-link">
+            <span>Learn more</span>
+            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card scroll-animate scroll-delay-600">
+          <div class="service-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-map-pin">
+              <path
+                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 15 4 10a8 8 0 0 1 16 0" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">Missing Persons</h3>
+          <p class="service-card-desc">Skip tracing and person location services utilizing advanced databases, field
+            investigation, and nationwide networking.</p>
+          <div class="service-card-link">
+            <span>Learn more</span>
+            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
