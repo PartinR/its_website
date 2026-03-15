@@ -692,10 +692,12 @@ a {
   color: rgba(255, 255, 255, 0.9);
 }
 
-.logo-icon svg {
-  width: 24px;
-  /* Make the SVG inside bigger too */
-  height: 24px;
+.logo-icon img,
+.footer-logo-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
 }
 
 .nav-logo:hover .logo-icon {
@@ -709,8 +711,8 @@ a {
 }
 
 .logo-title {
-  font-size: 1.125rem;
-  /* Increased to 18px */
+  font-size: 1.25rem;
+  /* Increased to 20px */
   font-weight: 700;
   letter-spacing: -0.025em;
   color: #1A1A1A;
@@ -718,10 +720,11 @@ a {
 }
 
 .logo-subtitle {
-  font-size: 0.75rem;
-  /* Increased to 12px */
+  font-size: 0.8125rem;
+  /* Increased to 13px */
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.23em;
+  /* Adjusted to match title width */
   text-transform: uppercase;
   color: var(--primary);
   opacity: 0.8;
@@ -954,7 +957,11 @@ a {
   margin-bottom: 1rem;
 }
 
-.form-group:last-of-type {
+.form-row .form-group {
+  margin-bottom: 0;
+}
+
+.contact-form>.form-group:last-of-type {
   margin-bottom: 1.5rem;
 }
 
@@ -1176,9 +1183,7 @@ a {
   justify-content: center;
 }
 
-.footer-logo-icon svg {
-  color: rgba(255, 255, 255, 0.9);
-}
+/* The styling for .footer-logo-icon img is handled alongside .logo-icon img */
 
 .footer-text {
   display: flex;
@@ -1187,17 +1192,17 @@ a {
 }
 
 .footer-title {
-  font-size: 0.9375rem;
-  /* 15px */
+  font-size: 1.25rem;
+  /* 20px */
   font-weight: 600;
   letter-spacing: -0.025em;
 }
 
 .footer-subtitle {
-  font-size: 0.6875rem;
-  /* 11px */
+  font-size: 0.8125rem;
+  /* 13px */
   font-weight: 500;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.23em;
   text-transform: uppercase;
   color: rgba(140, 29, 37, 1);
   margin-top: 0.125rem;
@@ -1210,8 +1215,8 @@ a {
 }
 
 .footer-link {
-  font-size: 0.8125rem;
-  /* 13px */
+  font-size: 0.9375rem;
+  /* 15px */
   font-weight: 500;
   color: rgba(255, 255, 255, 0.5);
   background: none;
