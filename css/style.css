@@ -1,9 +1,11 @@
 /* --- Variables --- */
 :root {
-  --primary: #8B1538;
-  /* The burgundy from the react code */
-  --primary-light: rgba(139, 21, 56, 0.1);
-  --primary-hover: #70112d;
+  --primary: #8C1D25;
+  /* Updated to match the ITS logo */
+  --primary-light: rgba(140, 29, 37, 0.1);
+  /* Updated to match */
+  --primary-hover: #6E161D;
+  /* Slightly darker shade for button hovers */
   --background: #ffffff;
   --foreground: #111827;
   --muted-foreground: #6b7280;
