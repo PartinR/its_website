@@ -684,7 +684,7 @@ a {
   /* Increased from 2rem */
   height: 2.75rem;
   border-radius: 0.6rem;
-  background-color: var(--primary);
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -698,6 +698,9 @@ a {
   height: 100%;
   object-fit: cover;
   border-radius: inherit;
+  mix-blend-mode: multiply;
+  filter: contrast(1.1) brightness(1.1);
+  /* Blows out the light gray background to pure white making it blend perfectly */
 }
 
 .nav-logo:hover .logo-icon {
@@ -1177,7 +1180,7 @@ a {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 0.75rem;
-  background-color: rgba(140, 29, 37, 1);
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1204,7 +1207,7 @@ a {
   font-weight: 500;
   letter-spacing: 0.23em;
   text-transform: uppercase;
-  color: rgba(140, 29, 37, 1);
+  color: var(--primary);
   margin-top: 0.125rem;
 }
 
