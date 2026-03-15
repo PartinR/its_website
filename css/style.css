@@ -221,7 +221,7 @@ a {
 .image-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(139, 21, 56, 0.3), transparent);
+  background: transparent;
 }
 
 .floating-card {
