@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(el);
   });
 
-  // Contact Form Handling (Simulated)
+  // Contact Form Handling (Formspree Fetch)
   const contactForm = document.getElementById('contact-form');
   const submitBtn = document.getElementById('submit-btn');
   const submitText = document.getElementById('submit-text');
@@ -68,31 +68,59 @@ document.addEventListener('DOMContentLoaded', () => {
   const formMessage = document.getElementById('form-message');
 
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault(); // We keep this to stop the page from redirecting
       
       // UI Loading State
       submitBtn.disabled = true;
       submitSpinner.classList.remove('hidden');
-      sendIcon.classList.add('hidden');
+      if(sendIcon) sendIcon.classList.add('hidden');
       submitText.textContent = 'Sending...';
       formMessage.classList.add('hidden');
 
-      // Simulate network request delays
-      setTimeout(() => {
-        // UI Success State
+      const data = new FormData(contactForm);
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: contactForm.method,
+          body: data,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          // UI Success State
+          submitBtn.disabled = false;
+          submitSpinner.classList.add('hidden');
+          if(sendIcon) sendIcon.classList.remove('hidden');
+          submitText.textContent = 'Send Message';
+          
+          formMessage.textContent = "Message sent! We'll be in touch within 24 hours.";
+          formMessage.style.color = "var(--success-color, green)"; // Adjust color as needed
+          formMessage.classList.remove('hidden');
+          contactForm.reset();
+
+          // Hide success message after 5 seconds
+          setTimeout(() => {
+            formMessage.classList.add('hidden');
+          }, 5000);
+        } else {
+          // Formspree returned an error (e.g., bad email format)
+          const errorData = await response.json();
+          throw new Error(errorData.error || 'Oops! There was a problem submitting your form');
+        }
+      } catch (error) {
+        // UI Error State
         submitBtn.disabled = false;
         submitSpinner.classList.add('hidden');
-        sendIcon.classList.remove('hidden');
+        if(sendIcon) sendIcon.classList.remove('hidden');
         submitText.textContent = 'Send Message';
+        
+        formMessage.textContent = error.message || "Oops! There was a network problem.";
+        formMessage.style.color = "red";
         formMessage.classList.remove('hidden');
-        contactForm.reset();
-
-        // Hide success message after 5 seconds
-        setTimeout(() => {
-          formMessage.classList.add('hidden');
-        }, 5000);
-      }, 1200);
+      }
     });
   }
 });
